@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+:root {
+    --azul-marinho: #22D4FD;
+    --branco-claro: #F6F6F6;
+    --preto-escuro: #000000;
+    --fontPrincipal: "Montserrat", sans-serif;
+    --fontSegundario: "Krona One", sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--preto-escuro);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* MENU */
+.cabe {
+    color: var(--azul-marinho);
+    display: flex;
+    padding-top: 43px;
+    padding-left: 20vw;
+    gap: 115px;
+
+    font-family: var(--fontPrincipal);
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.home,
+.sobre {
+    color: var(--azul-marinho);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* CONTEÚDO PRINCIPAL */
+main {
+    color: var(--branco-claro);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 70px 36px;
+    flex: 1;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    max-width: 650px;
+    gap: 0px; /* Altere este valor para aumentar ou diminuir o espaço entre todos os parágrafos ao mesmo tempo! */
+}
+
+.text {
+    font-family: var(--fontSegundario);
+    font-size: 26px;
+    line-height: 1.4;
+    margin-top: 0;
+    margin-bottom: 20px; /* Margem negativa puxa o texto de baixo para mais perto */
+}
+
+
+.text span {
+    color: var(--azul-marinho);
+}
+
+.text11{
+    font-family: var(--fontSegundario);
+    font-size: 26px;
+    line-height: 1.4;
+    margin-top: 0;
+    margin-bottom: 5px; /* Margem negativa puxa o texto de baixo para mais perto */
+}
+
+.text2{
+    font-family: var(--fontPrincipal);
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.text3{
+     font-family: var(--fontPrincipal);
+    font-size: 16px;
+    margin-bottom: 5px;
+    line-height: 1.6;
+}
+
+.text4{
+     font-family: var(--fontPrincipal);
+    font-size: 16px;
+    margin-bottom: 0px;
+    line-height: 1.6;
+}
+
+/* BOTÕES */
+.butt {
+    display: flex;
+    gap: 40px;
+}
+
+.bott1,
+.bott2 {
+    background-color: var(--azul-marinho);
+    color: var(--preto-escuro);
+    padding: 25px 59px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-family: var(--fontPrincipal);
+    font-weight: bold;
+}
+
+/* IMAGEM */
+.eu {
+    width: 400px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* RODAPÉ */
+.roda {
+    background-color: var(--azul-marinho);
+    font-family: var(--fontPrincipal);
+    padding: 30px;
+    width: 100%;
+    text-align: center;
+    font-size: 26px;
+    color: black;
+}
+
+
+/* ================================= */
+/* RESPONSIVIDADE - CELULAR */
+/* ================================= */
+
+@media (max-width: 768px) {
+
+    /* MENU */
+    .cabe {
+        padding: 25px 20px;
+        justify-content: center;
+        gap: 40px;
+        font-size: 18px;
+    }
+
+    /* CONTEÚDO */
+    main {
+        flex-direction: column;
+        gap: 40px;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .texto {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    /* TÍTULO */
+    .text {
+        font-size: 20px;
+        line-height: 1.5;
+        margin-bottom: 25px;
+    }
+
+    /* TEXTO */
+    .text2,
+    .text3,
+    .text4 {
+        font-size: 14px;
+        line-height: 1.6;
+        margin-bottom: 10px;
+    }
+
+    /* BOTÕES */
+    .butt {
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .bott1,
+    .bott2 {
+        padding: 16px 25px;
+        font-size: 14px;
+    }
+
+    /* IMAGEM */
+    .eu {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        aspect-ratio: 4 / 5;
+        object-fit: cover;
+    }
+
+    /* RODAPÉ */
+    .roda {
+        padding: 20px 15px;
+        font-size: 14px;
+    }
+}
+
+
+/* ================================= */
+/* CELULARES MUITO PEQUENOS */
+/* ================================= */
+
+@media (max-width: 400px) {
+
+    .cabe {
+        gap: 25px;
+        font-size: 16px;
+    }
+
+    main {
+        padding: 30px 15px;
+    }
+
+    .text {
+        font-size: 17px;
+    }
+
+    .text2,
+    .text3,
+    .text4 {
+        font-size: 13px;
+    }
+
+    .bott1,
+    .bott2 {
+        padding: 14px 20px;
+    }
+
+    .eu {
+        max-width: 250px;
+    }
+
+    .roda {
+        font-size: 12px;
+    }
+}
