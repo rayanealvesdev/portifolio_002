@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,46 +9,162 @@
 </head>
 <body>
 
-    <header>
+    <header class="cabecalho">
 
-    <nav class="cabe"> 
-        <a href="index.html" class="home">Home</a>
-        <a href="sobremim.html" class="sobre">Sobre mim</a> 
+    <nav class="cabecalho-nav"> 
+        <a href="index.html" class="link-nav">Home</a>
+        <a href="sobremim.html" class="link-nav">Sobre mim</a> 
     </nav>
 
     </header>
 
-    <main>
+   
+<main>
 
-        <section class="texto">
+    <section class="apresentacao">
 
-            <h2 class="text">Eleve seu negócio digital <br>
-             a outro nível <span> com um <br>Front-end de qualidade! </span></h2>
+        <!-- TEXTO À ESQUERDA -->
+        <div class="apresentacao-conteudo">
 
-             <br>
+            <h1 class="apresentacao-titulo">
+                Eleve seu negócio digital a outro nível
+                <span class="titulo-destaque">
+                    com um Front-end de qualidade!
+                </span>
+            </h1>
 
-            <p class="text2">
-            Olá! Sou Rayane Alves, desenvolvedora Front-end <br>
-             com especialidade em React, HTML e CSS. Ajudo <br>
-              pequenos negócios e designers a colocarem em <br>
-               prática boas ideias. Vamos conversar?</p>
+            <p class="apresentacao-descricao">
+                Olá! Sou Rayane Alves, estudante de
+                Análise e Desenvolvimento de Sistemas.
+                Tenho conhecimentos em HTML e CSS e estou
+                desenvolvendo minhas habilidades em
+                desenvolvimento web.
+            </p>
 
-            <br>
+            <div class="redes-sociais">
 
-            <section class="butt">
+                <a href="https://www.instagram.com/"
+                   target="_blank"
+                   class="botao-social">
+                    Instagram
+                </a>
 
-                <a href="https://www.instagram.com/instagram" target="_blank" class="bott1">Instagram</a>
-                <a href="https://github.com" target="_blank" class="bott2">GitHub</a>
+                <a href="https://github.com/"
+                   target="_blank"
+                   class="botao-social">
+                    GitHub
+                </a>
 
-            </section>
+            </div>
 
-          </section>
+        </div>
 
-            <img class="eu" src="rayane.jpeg" alt="foto">
+        <!-- FOTO À DIREITA -->
+        <div class="apresentacao-foto">
 
-    </main>
+            <img
+                class="foto-perfil"
+                src="imagens/rayane.jpeg"
+                alt="Foto de Rayane Alves"
+            >
 
-    <footer class="roda">
+        </div>
+
+    </section>
+
+    
+<!-- SEÇÃO DE PROJETOS -->
+<section class="projetos" id="projetos">
+
+    <h2 class="projetos-titulo">Meus projetos</h2>
+
+    <p class="projetos-descricao">
+        Confira alguns dos projetos que desenvolvi
+        e que fazem parte da minha jornada como
+        desenvolvedora.
+    </p>
+
+    <!-- CONTAINER DOS DOIS CARDS -->
+    <div class="projetos-container">
+
+        <!-- PROJETO 1 -->
+        <article class="projeto-card">
+
+            <img
+                src="imagens/portfolio.png"
+                alt="Imagem do portfólio profissional"
+                class="projeto-imagem"
+            >
+
+            <div class="projeto-conteudo">
+
+                <h3>Portfólio Profissional</h3>
+
+                <p>
+                    Meu portfólio online, com informações
+                    sobre mim, meus conhecimentos e formas
+                    de contato.
+                </p>
+
+                <div class="projeto-tecnologias">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                </div>
+
+                <a href="index.html" class="projeto-link">
+                    Ver projeto →
+                </a>
+
+            </div>
+
+        </article>
+
+        <!-- PROJETO 2 -->
+        <article class="projeto-card">
+
+            <img
+                src="imagens/projeto-web.png"
+                alt="Imagem de um projeto web"
+                class="projeto-imagem"
+            >
+
+            <div class="projeto-conteudo">
+
+                <h3>Projeto Web</h3>
+
+                <p>
+                    Projeto desenvolvido para praticar
+                    HTML, CSS e criação de páginas
+                    responsivas.
+                </p>
+
+                <div class="projeto-tecnologias">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                </div>
+
+                <a
+                    href="https://github.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="projeto-link"
+                >
+                    Ver projeto →
+                </a>
+
+            </div>
+
+        </article>
+
+    </div>
+    <!-- FIM DO CONTAINER -->
+
+</section>
+
+</main>
+
+
+    <footer class="rodape">
         <p>Desenvolvido por Rayane Alves</p>
     </footer>
     
